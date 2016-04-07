@@ -12,7 +12,11 @@ function getPins(author) {
             var title = $('<h5/>').html(pins[i].name);
             var deleteBtn = $('<a/>').addClass('btn btn-danger deletePin').html('Delete').css('display', 'block');
             imgDiv.append(img);
-            textDiv.append(title).append(deleteBtn);
+            textDiv.append(title);
+            if (author) {
+                var deleteBtn = $('<a/>').addClass('btn btn-danger deletePin').html('Delete').css('display', 'block');
+                textDiv.append(deleteBtn);
+            }
             div.append(imgDiv).append(textDiv);
             $('#items').append(div);
         }
