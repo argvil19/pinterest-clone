@@ -38,5 +38,5 @@ function imgError(image) {
 }
 
 $(document).ready(function() {
-    getPins(profile.html());
+    getPins($('#profile').html());
 })
