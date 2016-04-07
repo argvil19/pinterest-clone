@@ -27,8 +27,12 @@ module.exports = function(app, passport) {
     /* USERS */
     
     app.get('/user/:u', function(req, res) {
-        var user = req.params.u;
-        return res.render('userPins', {userProfile:user});
+        var toSend = {};
+        toSend.userProfile = req.params.u;
+        if (req.isAuthenticated()) {
+            toSend.user = req.user;
+        }
+        return res.render('userPins', toSend);
     })
     
     
