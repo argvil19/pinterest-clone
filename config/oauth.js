@@ -1,7 +1,7 @@
 module.exports = {
     twitter:{
-        consumerKey:'REPLACE WITH YOURS',
-        consumerSecret:'REPLACE WITH YOURS',
+        consumerKey:'mgAlw0fp79DqG41I2QTJp7RSi',
+        consumerSecret:'fCy1L9WfcixiAaiICMUuv9ASLyvsB7GvPPNZXvkU0EWwJTARuw',
         callbackURL:'/auth/twitter/callback'
     }
 }
