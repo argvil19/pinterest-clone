@@ -31,7 +31,8 @@ module.exports = function(app, passport) {
         toSend.userProfile = req.params.u;
         if (req.isAuthenticated()) {
             toSend.user = req.user;
-        }
+            return res.render('userPins', toSend);
+        } else
         return res.render('userPins', toSend);
     })
     
