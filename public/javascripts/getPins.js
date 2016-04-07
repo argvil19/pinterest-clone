@@ -51,7 +51,6 @@ $(document).ready(function() {
     var profile = $('#profile').html()? $('#profile'):0;
     if (profile) {
         getPins(profile.html());
-        return true;
     } else
     getPins();
 })

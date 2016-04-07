@@ -60,7 +60,7 @@ module.exports = function(app, passport) {
     });
     
     app.get('/getPins?', function(req, res) {
-        var author = req.body.author || req.user.twitter.username || req.user.email;
+        var author = req.query.author || req.user.twitter.username || req.user.email;
         Pin.find({author:author}, {__v:0}, function(err, data) {
             if (err) {
                 throw err;
