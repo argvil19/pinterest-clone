@@ -1,0 +1,23 @@
+.img-wrapper {
+    width:150px;
+}
+
+.txt-wrapper {
+    background-color:white;
+    padding:10px;
+}
+
+.item {
+    width:150px;
+    height:auto;
+    margin-bottom:30px;
+    box-shadow: 0 2px 5px black;
+}
+
+img {
+    width:150px;
+}
+
+#btnTwitter {
+    font-weight: bold;
+}
